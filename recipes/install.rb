@@ -35,7 +35,8 @@ end
 
 #unzip mule
 execute "unzip" do
-  command "unzip #{node['mule']['install_dir']}/#{ZIP_FILE} -d #{node['mule']['install_dir']}"
+  command "unzip #{node['mule']['install_dir']}/#{ZIP_FILE} -d #{node['mule']['install_dir']}" if node['mule']['dist_extension'] == 'zip'
+  command "tar -xzf #{node['mule']['install_dir']}/#{ZIP_FILE} #{node['mule']['install_dir']}" if node['mule']['dist_extension'] == 'tar.gz'
   creates "#{node['mule']['install_dir']}/#{ZIP_FILE.gsub('.zip', '')}"
   action :run
   notifies :run, "execute[run_mule]", :immediately
