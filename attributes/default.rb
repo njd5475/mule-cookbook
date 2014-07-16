@@ -1,3 +1,7 @@
+default['mule']['dist_url'] = "http://dist.codehaus.org/mule/distributions/"
+default['mule']['version'] = "3.3.1"
+default['mule']['dist_extension'] = "zip"
+default['mule']['base_name'] = "mule-standalone-"
 default['mule']['install_dir'] = "/opt"
 default['mule']['log_dir'] = "/var/log"
 default['workspace']['directory'] = "/opt/workspace/"
