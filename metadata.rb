@@ -1,3 +1,4 @@
+name             "Mule"
 depends          "java"
 description      "Installs/Configures mule esb, downloads mule project from repository, build by mvn and deploy on mule according to MULE_HOME"
 license          "Apache License"
