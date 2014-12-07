@@ -5,4 +5,4 @@ license          "Apache License"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 maintainer       "AMG.net"
 maintainer_email "michal.kaminski@amg.net.pl"
-version          "0.0.1"
+version          "0.1.0"
